@@ -1,0 +1,1 @@
+Ini adalah project sistem inventori barang sederhana
