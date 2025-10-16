@@ -1,6 +1,21 @@
 import java.util.Scanner;
 
 public class App {
+    public static void createBarang(Scanner input, String[] ids, String[] names, int[] qtys, int count) {
+        if (count >= 100) {
+            System.out.println("Data barang penuh!");
+            return;
+        }
+        System.out.print("Masukkan ID barang: ");
+        ids[count] = input.nextLine();
+        System.out.print("Masukkan nama barang: ");
+        names[count] = input.nextLine();
+        System.out.print("Masukkan jumlah barang: ");
+        qtys[count] = input.nextInt();
+        input.nextLine(); // konsumsi enter
+        System.out.println("Data barang berhasil ditambahkan!");
+    }
+
     public static void main(String[] args) {
         Scanner input = new Scanner(System.in);
 
@@ -18,19 +33,7 @@ public class App {
 
         switch (menu) {
             case 1:
-                if (count >= 100) {
-                    System.out.println("Data barang penuh!");
-                    break;
-                }
-                System.out.print("Masukkan ID barang: ");
-                ids[count] = input.nextLine();
-                System.out.print("Masukkan nama barang: ");
-                names[count] = input.nextLine();
-                System.out.print("Masukkan jumlah barang: ");
-                qtys[count] = input.nextInt();
-                input.nextLine(); // konsumsi enter
-                count++;
-                System.out.println("Data barang berhasil ditambahkan!");
+                createBarang(input, ids, names, qtys, count);
                 break;
             default:
                 System.out.println("Menu tidak valid!");
