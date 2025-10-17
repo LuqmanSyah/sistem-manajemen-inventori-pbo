@@ -13,7 +13,11 @@ public class App {
         System.out.print("Masukkan jumlah barang: ");
         qtys[count] = input.nextInt();
         input.nextLine(); // konsumsi enter
-        System.out.println("Data barang berhasil ditambahkan!");
+        System.out.println("\nData barang berhasil ditambahkan! \n");
+
+        System.out.println("Id barang: " + ids[0]);
+        System.out.println("Nama barang: " + names[0]);
+        System.out. println("Jumlah barang: " + qtys[0]);
     }
 
     public static void main(String[] args) {
@@ -28,17 +32,21 @@ public class App {
         System.out.println("\n=== Menu ===");
         System.out.println("1. Create (Tambah Data Barang)");
         System.out.print("Pilih menu: ");
-        int menu = input.nextInt();
-        input.nextLine(); // konsumsi enter
+        if (input.hasNextInt()) {
+            int menu = input.nextInt();
+            input.nextLine(); // konsumsi enter
 
-        switch (menu) {
+            switch (menu) {
             case 1:
                 createBarang(input, ids, names, qtys, count);
                 break;
             default:
                 System.out.println("Menu tidak valid!");
+            }
+        } else {
+            System.out.println("Input tidak valid");
         }
-
+    
         input.close();
     }
 }
