@@ -16,6 +16,14 @@ public class Pakaian extends Barang {
         this.bahan = bahan;
     }
 
+    public String getUkuran() {
+        return ukuran;
+    }
+
+    public String getBahan() {
+        return bahan;
+    }
+
     @Override
     public void tampilkanInfo() {
         super.tampilkanInfo();

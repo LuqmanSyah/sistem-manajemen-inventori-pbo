@@ -24,6 +24,14 @@ public class Barang {
         return nama;
     }
 
+    public double getHarga() {
+        return harga;
+    }
+
+    public int getStok() {
+        return stok;
+    }
+
     public void tampilkanInfo() {
         System.out.print(
             "Kode: " +
