@@ -29,4 +29,8 @@ public class Inventori {
         }
         System.out.println("Barang tidak ditemukan");
     }
+
+    public ArrayList<Barang> getListBarang() {
+        return listBarang;
+    }
 }

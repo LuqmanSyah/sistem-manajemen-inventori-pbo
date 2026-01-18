@@ -13,6 +13,10 @@ public class Elektronik extends Barang {
         this.garansi = garansi;
     }
 
+    public String getGaransi() {
+        return garansi;
+    }
+
     @Override
     public void tampilkanInfo() {
         super.tampilkanInfo();
