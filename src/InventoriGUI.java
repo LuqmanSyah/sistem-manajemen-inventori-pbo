@@ -53,6 +53,7 @@ public class InventoriGUI extends JFrame {
         contentPanel.removeAll();
         
         JPanel mainPanel = new JPanel(new BorderLayout(10, 10));
+        mainPanel.setBorder(BorderFactory.createEmptyBorder(20, 30, 20, 30));
         
         // Judul
         JPanel judulPanel = new JPanel();
@@ -175,6 +176,7 @@ public class InventoriGUI extends JFrame {
         contentPanel.removeAll();
         
         JPanel tabelPanel = new JPanel(new BorderLayout(10, 10));
+        tabelPanel.setBorder(BorderFactory.createEmptyBorder(20, 30, 20, 30));
         
         JLabel judulLabel = new JLabel("DAFTAR SEMUA BARANG");
         judulLabel.setFont(new Font("Arial", Font.BOLD, 18));
@@ -226,6 +228,7 @@ public class InventoriGUI extends JFrame {
         contentPanel.removeAll();
         
         JPanel mainPanel = new JPanel(new BorderLayout(10, 10));
+        mainPanel.setBorder(BorderFactory.createEmptyBorder(20, 30, 20, 30));
         
         JPanel judulPanel = new JPanel();
         JLabel judulLabel = new JLabel("UPDATE STOK BARANG");
