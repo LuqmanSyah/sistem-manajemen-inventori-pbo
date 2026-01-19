@@ -27,3 +27,6 @@ bin/
 *.zip
 *.tar.gz
 *.rar
+
+# Configuration
+src/DatabaseConfig.java
